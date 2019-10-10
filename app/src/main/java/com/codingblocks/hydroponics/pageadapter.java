@@ -22,6 +22,7 @@ public class pageadapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
+                
                 return new nutrientfrag();
             case 1:
                 return new Table();

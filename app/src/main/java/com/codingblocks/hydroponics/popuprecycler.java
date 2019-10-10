@@ -20,6 +20,10 @@ public class popuprecycler extends RecyclerView.Adapter<popuprecycler.viewHolder
         this.context = context;
     }
 
+    public popuprecycler(List<nutrient_frag_pojo> list) {
+        this.list = list;
+    }
+
     @NonNull
     @Override
     public popuprecycler.viewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {

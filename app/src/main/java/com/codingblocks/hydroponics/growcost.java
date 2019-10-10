@@ -33,7 +33,7 @@ public class growcost extends Fragment {
         Button btn;
 
         final View view= inflater.inflate(R.layout.fragment_growcost, container, false);
-        cost=view.findViewById(R.id.growcost);
+        cost=view.findViewById(R.id.kwh);
         noh=view.findViewById(R.id.no_of_hours);
         grwlight=view.findViewById(R.id.growlighting);
         btn=view.findViewById(R.id.calculatecost);
@@ -45,11 +45,7 @@ public class growcost extends Fragment {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(cost.getText()==null|| noh.getText()==null||totwatt.getText()==null||tothours.getText()==null||grwlight.getText()==null)
-                {
-                    Toast.makeText(getContext(),"please enter all the fields ",Toast.LENGTH_LONG).show();
-                }
-                else {
+
                    String cost1=cost.getText().toString();
                     final String  noh1=noh.getText().toString();
                     final String totwatt1=totwatt.getText().toString();
@@ -71,7 +67,7 @@ public class growcost extends Fragment {
                    startActivity(i);
                 }
 
-            }
+
         });
 
 

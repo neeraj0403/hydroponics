@@ -86,6 +86,7 @@ android:textColor="	#000000"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:id="@+id/seed"
+
         android:hint="Enter name of seed"
         />
     <TextView
@@ -105,6 +106,17 @@ android:textColor="	#000000"
     android:text="Submit"
     android:background="@drawable/fragbutton"
     />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Want to buy any seed for your Crop?"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:layout_marginLeft="70dp"
+            android:clickable="true"
+            android:id="@+id/amazon"
+            android:layout_marginTop="30dp"/>
 
 
 

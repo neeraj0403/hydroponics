@@ -3,6 +3,7 @@ package com.codingblocks.hydroponics;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.core.view.LayoutInflaterCompat;
@@ -17,6 +18,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.PopupWindow;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,9 +41,12 @@ public class nutrientfrag extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_nutrientfrag, container, false);
         Button submit=view.findViewById(R.id.submit);
+        final EditText seed=view.findViewById(R.id.seed);
+        TextView shopping=view.findViewById(R.id.amazon);
 
 
 
+        final Context context=getActivity().getApplicationContext();
 
 //        submit.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -54,8 +59,20 @@ public class nutrientfrag extends Fragment {
           @Override
           public void onClick(View view1) {
 
-             startActivity(new Intent(getContext(),popup.class));
+     String str=seed.getText().toString();
+            Intent intent=new Intent(getContext(),popup.class);
+            intent.putExtra("seed name",str);
+            startActivity(intent);
 
+          }
+      });
+      shopping.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              Intent launchIntent = getActivity().getPackageManager().getLaunchIntentForPackage("com.amazon.mShop.android.shopping");
+              if (launchIntent != null) {
+                  startActivity(launchIntent);//null pointer check in case package name was not found
+              }
           }
       });
         return view;
