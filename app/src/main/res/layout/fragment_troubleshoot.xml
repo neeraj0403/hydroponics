@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Troubleshoot">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Having Problems with your hydroponics \n garden"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_margin="5dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Try our nifty, user-friendly hydroponics resource: a troubleshooting guide to help quickly diagnose \n and treat whatever ails it.\n
+Why is our guide so easy to use? Just look up \n  your problem by the main symptom, and you're \n on your way to the solution! \n
+First we review the Big Picture for possible \n obvious problems, \n the we take you to the Troubleshooting Tool."
+        android:textStyle="normal"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FIRST CHECK THE BIG PICTURE"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#0000FF"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="our hydroponics resource for troubleshooting"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:text="First, before digging into the topics below, we \n
+         suggest you take a quick look at the big picture of
+          \n your hydro system. Unless you have an \n
+          obvious insect or disease infestation going on... \n
+          your problems most likely have been caused by \n
+          poor growing conditions. Run through these \n obvious solutions first:"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Climate"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#0000FF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_play_arrow_black_24dp"
+
+        android:text=" Is the temperature between 60-90°? Is \n there a 10° drop when the lights go out for \n the night?
+Is the RH (relative humidity) between \n 50-70%? (50-60% is best)
+Ventilation: Do you have adequate air \n exchange, or is it stagnant and stale in \n there? Is the stale air being vented out \n somehow? Do you have a fan gently \n stirring the leaves 24/7?"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lightining"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#0000FF"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you using  HID lights? (Fluorescents \n and most LEDs will not support \n fruiting/flowering).\n
+Is the lamp too close or not close enough?"
+        android:drawableLeft="@drawable/ic_play_arrow_black_24dp"
+
+        android:layout_margin="10dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:background="@drawable/ic_camera_alt_black_24dp"
+        android:scaleType="center"
+
+        android:layout_gravity="right" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The nutrient system"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#0000FF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check the reservoir. What temp is the grow \n juice? Should be below 85°; under 80° is \n optimal.
+Is there enough solution, or is the pump \n sucking air during cycles?
+If you suspect any feeding/watering \n problems, drain the reservoir and start a \n new batch of nutrient solution"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TROUBLESHOOTING GUIDE"
+        android:gravity="center"
+
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#0000FF"/>
+
+
+
+
+</LinearLayout>
+
+</FrameLayout>
+</ScrollView>
